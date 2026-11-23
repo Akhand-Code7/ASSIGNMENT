@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Page</title>
+</head>
+<body>
+    <!-- This link helps keyboard users skip directly to the main content. -->
+    <a href="#main">Skip to main content</a><br>
+    <a href="#help">Home Help</a>
+
+    <main id="main">
+        <!-- A clear heading helps users understand the page. -->
+        <h1>Accessible Page</h1>
+
+        <!-- alt text describes the image for users who cannot see it. -->
+        <img src="accessible-image.png" alt="Accessibility symbol" width="150" height="40">
+
+        <!-- aria-label gives the search box an accessible name. -->
+        <form>
+            <label for="search">Search:</label>
+            <input type="search" id="search" aria-label="Search this page">
+        </form>
+    </main>
+
+    <p id="help"></p>
+</body>
+</html>

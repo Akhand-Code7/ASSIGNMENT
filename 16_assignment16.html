@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, Textarea and Buttons</title>
+</head>
+<body>
+    <form>
+        <!-- select creates a dropdown list of courses. -->
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="BCA">BCA</option>
+        </select>
+        <br><br>
+
+        <!-- textarea is used when the user needs to enter multiple lines. -->
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="30"
+            placeholder="Write here..."></textarea>
+        <br><br>
+
+        <!-- Submit sends the form, reset clears it and button is a normal button. -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+    </form>
+</body>
+</html>

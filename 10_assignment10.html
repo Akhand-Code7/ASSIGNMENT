@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia</title>
+</head>
+<body>
+    <!-- img is used to add an image to the webpage. Keep campus.jpg in this folder. -->
+    <h3>Image</h3>
+    <img src="campus.jpg" alt="College campus" width="180" height="150">
+
+    <!-- video adds a video player. Keep sample.mp4 in this folder. -->
+    <h3>Video</h3>
+    <video width="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- audio adds an audio player. Keep sample.mp3 in this folder. -->
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- iframe is used to embed a YouTube video. Replace VIDEO_ID if required. -->
+    <h3>YouTube</h3>
+    <iframe width="300" height="180"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube video player" allowfullscreen>
+    </iframe>
+</body>
+</html>

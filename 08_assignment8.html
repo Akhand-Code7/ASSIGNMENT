@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks and Images</title>
+    <style>
+        /* Extra height makes it easy to test the jump-to-bottom link. */
+        .space {
+            height: 500px;
+        }
+        img {
+            width: 70px;
+            height: 50px;
+            object-fit: contain;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body id="top">
+    <!-- This is a simple example of different types of links. -->
+    <p>Links demo</p>
+    <a href="https://www.google.com" target="_blank" rel="noopener">External link</a><br>
+    <a href="#bottom">Jump to bottom</a><br>
+    <a href="mailto:admin@example.com">Email us</a><br>
+
+    <!-- The alt attribute gives text if the image cannot be displayed. -->
+    Logo<br>
+    <img src="logo.png" alt="College logo" title="College Logo">
+
+    <div class="space"></div>
+
+    <p id="bottom">Bottom. <a href="#top">Back to top</a></p>
+</body>
+</html>
